@@ -1,3 +1,19 @@
 .App {
   text-align: center;
 }
+
+.App .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: lightgray;
+}
+
+.App .nav a{
+  margin: 0 20px;
+  text-decoration: none;
+}
+
+.App .nav a:hover{
+  text-decoration: underline;
+}

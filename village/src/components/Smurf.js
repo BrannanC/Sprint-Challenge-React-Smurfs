@@ -1,12 +1,14 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Smurf = props => {
   return (
-    <div className="Smurf">
+    <Link to={`/smurf/${props.id}`} className="Smurf">
       <h3>{props.name}</h3>
       <strong>{props.height} tall</strong>
       <p>{props.age} smurf years old</p>
-    </div>
+      <button onClick={e => props.handleDelete(e, props.id)}>[X]</button>
+    </Link>
   );
 };
 
